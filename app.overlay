@@ -11,3 +11,13 @@
         led-yellow = &ledyellow;
     };
 };
+
+// I2C device 
+&i2c0 {
+    lcd_screen: lcd_screen@27 { // I2C address 0x27
+            compatible = "i2c-device";
+            label = "lcd_screen";
+            reg = <0x27>;
+    };
+};
+
